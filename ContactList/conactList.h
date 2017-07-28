@@ -1,5 +1,5 @@
 //
-//  conactList.h
+//  ConactList.h
 //  ContactList
 //
 //  Created by Hirad on 2017-07-27.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface conactList : NSObject
+@interface ConactList : NSObject
 
 @end

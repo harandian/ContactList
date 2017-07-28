@@ -1,5 +1,5 @@
 //
-//  contact.h
+//  Contact.h
 //  ContactList
 //
 //  Created by Hirad on 2017-07-27.
@@ -8,9 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface contact : NSObject
+@interface Contact : NSObject
 
-@property NSString *contacts;
+@property NSString *contactName;
+
+- (instancetype)initWithName :(NSString *) contact;
 
 
 @end

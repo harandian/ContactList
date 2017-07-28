@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "InputCollector.h"
+#import "Contact.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -23,6 +24,27 @@ int main(int argc, const char * argv[]) {
         
         NSLog(@"YOUR TEXT IS !!!!!%@", [newInput inputConvertor:userInput]);
         
+//        Contact *contact1 = [[Contact alloc]initWithName:@"@Jerry Goodlett"];
+        
+        NSArray *importList =[[NSArray alloc] initWithObjects: @[@"Jerry Goodlett",
+                                @"Gilbert Imhoff",
+                                @"Chara Mcmeans",
+                                @"Justa Cabe"], nil];
+        
+        for ( int i = 0; i < importList.count; i++)
+        {
+        Contact *contact = [[Contact alloc]initWithName:importList[i]];
+            
+            NSLog(@"%@",contact.contactName);
+        }
+        
+        
+//        Verda Fyfe
+//        Nelly Haston
+//        Remedios Moret
+//        Rochelle Baldonado
+//        Jason Palazzo  
+//        Junie Knuth]
     }
     return 0;
 }

@@ -1,13 +1,13 @@
 //
-//  conactList.m
+//  ConactList.m
 //  ContactList
 //
 //  Created by Hirad on 2017-07-27.
 //  Copyright © 2017 Hirad. All rights reserved.
 //
 
-#import "conactList.h"
+#import "ConactList.h"
 
-@implementation conactList
+@implementation ConactList
 
 @end
