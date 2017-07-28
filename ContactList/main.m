@@ -13,7 +13,29 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        NSLog(@"Please Enter a text");
+        //        Contact *contact1 = [[Contact alloc]initWithName:@"@Jerry Goodlett"];
+        
+        NSMutableArray *importListName =[[NSMutableArray alloc] initWithObjects: @[@"Jerry Goodlett",
+                                @"Gilbert Imhoff",
+                                @"Chara Mcmeans",
+                                @"Justa Cabe"], nil];
+        
+        NSMutableArray *importListEmails =[[NSMutableArray alloc] initWithObjects: @[@"JerryG@bing.com",
+            @"GilberI@bing.com",
+            @"CharaM@bing.com",
+            @"JustaC@bing.com"], nil];
+        
+        
+        for ( int i = 0; i < importListName.count; i++)
+        {
+        
+            Contact *contact = [[Contact alloc]initWithName:importListName[i] email:importListEmails[i]];
+            
+            NSLog(@"%@,%@",contact.contactName, contact.email);
+        }
+        
+        
+        NSLog(@"Enter a new contact ");
         
         char userInput[255];
         
@@ -24,20 +46,7 @@ int main(int argc, const char * argv[]) {
         
         NSLog(@"YOUR TEXT IS !!!!!%@", [newInput inputConvertor:userInput]);
         
-//        Contact *contact1 = [[Contact alloc]initWithName:@"@Jerry Goodlett"];
-        
-        NSArray *importList =[[NSArray alloc] initWithObjects: @[@"Jerry Goodlett",
-                                @"Gilbert Imhoff",
-                                @"Chara Mcmeans",
-                                @"Justa Cabe"], nil];
-        
-        for ( int i = 0; i < importList.count; i++)
-        {
-        Contact *contact = [[Contact alloc]initWithName:importList[i]];
-            
-            NSLog(@"%@",contact.contactName);
-        }
-        
+
         
 //        Verda Fyfe
 //        Nelly Haston

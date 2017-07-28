@@ -10,11 +10,12 @@
 
 @implementation Contact
 
-- (instancetype)initWithName :(NSString *) contact
+- (instancetype)initWithName :(NSString*) contact email: (NSString*) email
 {
     self = [super init];
     if (self) {
         _contactName = contact;
+        _email = email;
     }
     return self;
 }

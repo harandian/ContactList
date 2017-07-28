@@ -11,8 +11,9 @@
 @interface Contact : NSObject
 
 @property NSString *contactName;
+@property NSString *email;
 
-- (instancetype)initWithName :(NSString *) contact;
+- (instancetype)initWithName :(NSString*) contact email: (NSString*) email;
 
 
 @end
