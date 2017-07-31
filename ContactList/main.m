@@ -18,7 +18,7 @@ int main(int argc, const char * argv[]) {
        
         
         //setting up the inital saved contact list
-        NSString *test = @"Test";
+        //NSString *test = @"Test";
         
       
         
@@ -47,17 +47,13 @@ int main(int argc, const char * argv[]) {
             
         }
         
-    
-        
-        
         [mainList.list addObjectsFromArray:contactOverride];
         
-        //[mainList addContact:contactOverride];
         NSLog(@"%@",mainList.list);
-        //NSLog(@"%@",contactOverride);
 
 // creating a new contact
-        NSLog(@"> Enter a new contact ");
+        
+        NSLog(@"> Enter a new contact first name last name and email ");
         
         char userInput[255];
         
@@ -71,34 +67,17 @@ int main(int argc, const char * argv[]) {
        // if (newInput isNotEqualTo:"Quit")
             
        // {
-        Contact *newContact = [[Contact alloc] initWithName: newInput.userInput email: newInput.userInput];
+        //Contact *newContact = [[Contact alloc] initWithName: newInput.name userInput email: ];
         //}
+        
+        Contact *newContact = [[Contact alloc] initWithName:newInput.name email:newInput.email];
         
         [mainList addContact:newContact];
         
         NSLog(@"%@",mainList.list);
-        NSLog(@"%i",mainList.list);
+ 
 
-        NSLog(@"%@", [mainList description]);
-
-//        for ( int i = 0; i < mainList.list.count; i++)
-//        {
-//            
-//            NSLog(@"%@",mainList);
-//            
-//        }
-        
-
-        
-        
-
-        
-//        Verda Fyfe
-//        Nelly Haston
-//        Remedios Moret
-//        Rochelle Baldonado
-//        Jason Palazzo  
-//        Junie Knuth]
+       
     }
     return 0;
 }

@@ -29,7 +29,7 @@
 
 - (NSString*)description
 {
-    return [NSString stringWithFormat:[Contact description]];
+    return [NSString stringWithFormat:@"%@", [Contact description]];
 }
 
 

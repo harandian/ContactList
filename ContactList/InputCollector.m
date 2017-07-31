@@ -20,6 +20,16 @@
 //    return self;
 //}
 
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        _userInput = [[NSArray alloc]init];
+    }
+    return self;
+}
+
 -(NSString *)inputConvertor :(char [255]) inputChar
 
 {
@@ -27,9 +37,17 @@
     
     intputString = [intputString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     
-    self.userInput = intputString;
+    self.userInput = [intputString componentsSeparatedByString:@" "];
     
-    return self.userInput;
+    self.firstName = self.userInput[0];
+    self.lastName = self.userInput[1];
+    self.email = self.userInput[2];
+   // self.name = [self.firstName stringByAppendingString:self.lastName];
+    self.name  = [NSString stringWithFormat:@"%@ %@", self.firstName, self.lastName];
+
+
+    
+    return self.email;
 }
 
 

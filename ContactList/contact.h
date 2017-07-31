@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) NSString *contactName;
 @property NSString *email;
+@property NSInteger uniqueId;
 
 - (instancetype)initWithName :(NSString*) contact email: (NSString*) email;
 

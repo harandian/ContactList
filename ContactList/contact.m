@@ -22,7 +22,9 @@
 
 -(NSString *) description {
     
-    return self.contactName;
+    NSString *fullContact = [NSString stringWithFormat:@"%@ %@", self.contactName, self.email];
+    
+    return fullContact;
     
 }
 

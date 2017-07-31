@@ -10,7 +10,15 @@
 
 @interface InputCollector : NSObject
 
-@property (nonatomic, strong) NSString *userInput;
+@property (nonatomic, strong) NSArray *userInput;
+@property (nonatomic, strong) NSString *firstName;
+@property (nonatomic, strong) NSString *lastName;
+@property (nonatomic, strong) NSString *email;
+@property (nonatomic, strong) NSString *name;
+
+
+
+
 
 
 -(NSString *)inputConvertor :(char [255]) inputChar;
