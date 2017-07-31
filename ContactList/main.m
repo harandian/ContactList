@@ -9,21 +9,31 @@
 #import <Foundation/Foundation.h>
 #import "InputCollector.h"
 #import "Contact.h"
+#import "contactList.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        //        Contact *contact1 = [[Contact alloc]initWithName:@"@Jerry Goodlett"];
+        contactList *mainList = [[contactList alloc] init];
+       
         
-        NSMutableArray *importListName =[[NSMutableArray alloc] initWithObjects: @[@"Jerry Goodlett",
+        //setting up the inital saved contact list
+        NSString *test = @"Test";
+        
+      
+        
+        NSArray *importListName = @[@"Jerry Goodlett",
                                 @"Gilbert Imhoff",
                                 @"Chara Mcmeans",
-                                @"Justa Cabe"], nil];
+                                @"Justa Cabe"];
         
-        NSMutableArray *importListEmails =[[NSMutableArray alloc] initWithObjects: @[@"JerryG@bing.com",
+        NSArray *importListEmails = @[@"JerryG@bing.com",
             @"GilberI@bing.com",
             @"CharaM@bing.com",
-            @"JustaC@bing.com"], nil];
+            @"JustaC@bing.com"];
+        
+        NSMutableArray *contactOverride = [NSMutableArray new];
+        
         
         
         for ( int i = 0; i < importListName.count; i++)
@@ -32,10 +42,22 @@ int main(int argc, const char * argv[]) {
             Contact *contact = [[Contact alloc]initWithName:importListName[i] email:importListEmails[i]];
             
             NSLog(@"%@,%@",contact.contactName, contact.email);
+            
+            [contactOverride addObject:contact];
+            
         }
         
+    
         
-        NSLog(@"Enter a new contact ");
+        
+        [mainList.list addObjectsFromArray:contactOverride];
+        
+        //[mainList addContact:contactOverride];
+        NSLog(@"%@",mainList.list);
+        //NSLog(@"%@",contactOverride);
+
+// creating a new contact
+        NSLog(@"> Enter a new contact ");
         
         char userInput[255];
         
@@ -45,6 +67,29 @@ int main(int argc, const char * argv[]) {
         InputCollector *newInput = [[InputCollector alloc]init];
         
         NSLog(@"YOUR TEXT IS !!!!!%@", [newInput inputConvertor:userInput]);
+        
+       // if (newInput isNotEqualTo:"Quit")
+            
+       // {
+        Contact *newContact = [[Contact alloc] initWithName: newInput.userInput email: newInput.userInput];
+        //}
+        
+        [mainList addContact:newContact];
+        
+        NSLog(@"%@",mainList.list);
+        NSLog(@"%i",mainList.list);
+
+        NSLog(@"%@", [mainList description]);
+
+//        for ( int i = 0; i < mainList.list.count; i++)
+//        {
+//            
+//            NSLog(@"%@",mainList);
+//            
+//        }
+        
+
+        
         
 
         

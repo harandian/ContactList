@@ -10,7 +10,7 @@
 
 @interface Contact : NSObject
 
-@property NSString *contactName;
+@property (nonatomic, strong) NSString *contactName;
 @property NSString *email;
 
 - (instancetype)initWithName :(NSString*) contact email: (NSString*) email;

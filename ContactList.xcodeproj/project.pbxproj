@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		72236A781F2B14040065673C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72236A771F2B14040065673C /* main.m */; };
 		72236A801F2B14190065673C /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 72236A7F1F2B14190065673C /* Contact.m */; };
-		72236A831F2B14250065673C /* ConactList.m in Sources */ = {isa = PBXBuildFile; fileRef = 72236A821F2B14250065673C /* ConactList.m */; };
 		72236A861F2B149E0065673C /* InputCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 72236A851F2B149E0065673C /* InputCollector.m */; };
+		72236A961F2C16980065673C /* contactList.m in Sources */ = {isa = PBXBuildFile; fileRef = 72236A951F2C16980065673C /* contactList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,10 +30,10 @@
 		72236A771F2B14040065673C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		72236A7E1F2B14190065673C /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
 		72236A7F1F2B14190065673C /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
-		72236A811F2B14250065673C /* ConactList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConactList.h; sourceTree = "<group>"; };
-		72236A821F2B14250065673C /* ConactList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConactList.m; sourceTree = "<group>"; };
 		72236A841F2B149E0065673C /* InputCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputCollector.h; sourceTree = "<group>"; };
 		72236A851F2B149E0065673C /* InputCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputCollector.m; sourceTree = "<group>"; };
+		72236A941F2C16980065673C /* contactList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = contactList.h; sourceTree = "<group>"; };
+		72236A951F2C16980065673C /* contactList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = contactList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +69,8 @@
 				72236A771F2B14040065673C /* main.m */,
 				72236A7E1F2B14190065673C /* Contact.h */,
 				72236A7F1F2B14190065673C /* Contact.m */,
-				72236A811F2B14250065673C /* ConactList.h */,
-				72236A821F2B14250065673C /* ConactList.m */,
+				72236A941F2C16980065673C /* contactList.h */,
+				72236A951F2C16980065673C /* contactList.m */,
 				72236A841F2B149E0065673C /* InputCollector.h */,
 				72236A851F2B149E0065673C /* InputCollector.m */,
 			);
@@ -134,10 +134,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72236A961F2C16980065673C /* contactList.m in Sources */,
 				72236A801F2B14190065673C /* Contact.m in Sources */,
 				72236A781F2B14040065673C /* main.m in Sources */,
 				72236A861F2B149E0065673C /* InputCollector.m in Sources */,
-				72236A831F2B14250065673C /* ConactList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +266,7 @@
 				72236A7D1F2B14040065673C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
