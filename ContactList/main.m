@@ -16,9 +16,10 @@ int main(int argc, const char * argv[]) {
         
         contactList *mainList = [[contactList alloc] init];
        
+        BOOL Run = YES;
         
         //setting up the inital saved contact list
-        //NSString *test = @"Test";
+      
         
       
         
@@ -53,6 +54,8 @@ int main(int argc, const char * argv[]) {
 
 // creating a new contact
         
+        while (Run) {
+        
         NSLog(@"> Enter a new contact first name last name and email ");
         
         char userInput[255];
@@ -61,14 +64,9 @@ int main(int argc, const char * argv[]) {
         
         
         InputCollector *newInput = [[InputCollector alloc]init];
-        
+                    
         NSLog(@"YOUR TEXT IS !!!!!%@", [newInput inputConvertor:userInput]);
         
-       // if (newInput isNotEqualTo:"Quit")
-            
-       // {
-        //Contact *newContact = [[Contact alloc] initWithName: newInput.name userInput email: ];
-        //}
         
         Contact *newContact = [[Contact alloc] initWithName:newInput.name email:newInput.email];
         
@@ -77,7 +75,8 @@ int main(int argc, const char * argv[]) {
         NSLog(@"%@",mainList.list);
  
 
-       
+        }
+        return 0;
     }
     return 0;
 }

@@ -16,11 +16,6 @@
 @property (nonatomic, strong) NSString *email;
 @property (nonatomic, strong) NSString *name;
 
-
-
-
-
-
 -(NSString *)inputConvertor :(char [255]) inputChar;
 
 

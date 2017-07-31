@@ -42,7 +42,7 @@
     self.firstName = self.userInput[0];
     self.lastName = self.userInput[1];
     self.email = self.userInput[2];
-   // self.name = [self.firstName stringByAppendingString:self.lastName];
+    self.name = [self.firstName stringByAppendingString:self.lastName];
     self.name  = [NSString stringWithFormat:@"%@ %@", self.firstName, self.lastName];
 
 
